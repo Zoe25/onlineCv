@@ -1,0 +1,238 @@
+$sideBarColor :  #0C0E12;
+$headingColor : #FFA800;
+$backgroundPagesColor : #181A20;
+$textColor: #afb2be;
+@import 'partials/mixins';
+
+*{
+    padding:0px;
+    // margin:0px;
+}
+#container{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    font-family: 'Dosis';
+    letter-spacing: 2px;
+    #information{
+        text-align: center;
+        grid-column: 1/2;
+        color:$textColor;
+        background-color: $sideBarColor;
+
+        .tab{
+            button{
+                background-color: transparent;
+                color:#fff;
+                border:0px;
+                font-size:18px;
+                font-weight: 400;
+                font-family: 'Open Sans Condensed';
+                text-decoration: none;
+                &:active{
+                    color:$textColor;
+                }
+                &:hover{
+                    color:$headingColor;
+                }
+                &:focus{
+                    outline:0;
+                }
+            }
+        }
+        h1{
+            color:#fff;
+        }
+        h4{
+          font-size:13px;  
+          line-height: 17px;
+          font-weight: lighter;
+        }
+    }
+
+    #container2{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows:250px;
+        background-color:$backgroundPagesColor;
+        color:$textColor;
+        #personalInfo{
+            padding: 10px 0px 0px 20px;
+            grid-column:1/3; 
+            grid-row:1/2;            
+            p{
+                grid-column: 1/3;
+            }
+            img{
+                grid-column: 1/3;
+                width: 28em;
+                height:39em;
+            }
+        }
+        .education,{
+            grid-column:3/5;
+            grid-row:1/4;
+            h1, h2, h3{
+                color:$headingColor;
+            }
+        }
+        @include carousel;
+    }
+
+    #container3{
+        grid-column: 2/5;
+        // height: 260%;
+
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows:250px;
+        background-color:$backgroundPagesColor;
+        color:$textColor;
+        
+
+        .languages{
+            padding-left:40px;
+            grid-column:1/3;
+            color:$textColor;
+
+            ul{
+                li{
+                    text-decoration: none;
+                }
+            }
+            h3{
+                color:$headingColor;
+            }
+            }
+
+            .codeInfo{
+                padding-left:40px;
+                margin-top:20px;
+                grid-column: 1/5;
+                h1{
+                    color:$headingColor;
+                }
+            }
+        
+        @include carousel;
+    }
+
+    #container4{
+        grid-column: 2/5;
+        // height: 150%;
+
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows:250px;
+        background-color:$backgroundPagesColor;
+        color:$textColor;
+        .ethos{
+            
+            grid-column:1/3;
+            p{
+                padding-left:30px;
+                color:$textColor;
+                span{
+                    color:#fff;
+                }
+            }
+            h2{
+                padding-left:30px;
+                // padding-bottom:100px;
+                color:$headingColor;
+                // margin-bottom:100px;
+            }
+
+            
+        }
+
+        #inspiration{
+            grid-column:1/5;
+
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows:50px;
+            background-color:$backgroundPagesColor;
+            color:$textColor;
+
+            h2{
+                grid-column:1/5;
+                grid-row:2/3;
+                // text-align: center;
+                color:$headingColor;
+                padding-left:30px;
+                font-size:30px;
+            }
+
+            .smoke, .busy, .wings, .forest{
+                width: 250px;
+                height: 200px;
+            }
+
+            .starfish{
+                width: 500px;
+                height: 400px;
+                grid-column:1/3;
+                grid-row:3/5;
+            }
+            .smoke{
+                grid-column:3/4;
+                grid-row:3/4;
+            }
+            .busy{
+                grid-column:4/5;
+                grid-row:3/4;
+            }
+            .wings{
+                grid-column: 3/4;
+                grid-row:4/5;
+            }
+            .forest{
+                grid-column:4/5;
+                grid-row:4/5; 
+            }
+        }
+        
+        #skills{
+            margin-top:25px;
+            grid-column:1/5;
+            #slideshow {
+                
+                overflow: hidden;
+                height: 200px;
+                width: 1000px;
+                margin: 0 auto;
+              }
+            
+              .slide-wrapper {
+                width: 2080px;
+                animation: slide 18s ease infinite;
+              }
+            
+              .slide {
+                float: left;
+               height: 200px;
+               width: 1000px;
+              }
+            
+              .slide:nth-child(1) {
+                background:url(../images/carousel4.jpg);
+                background-position: center;
+                background-repeat: repeat-x;
+                background-size: cover;
+              }
+            
+              .slide:nth-child(2) {
+                background:url(../images/carousel3.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              }
+            
+              @keyframes slide {
+                20% {margin-left: 0px;}
+                30% {margin-left: -1000px;}
+                50% {margin-left: -1000px;}
+              }
+        }
+    }
+}

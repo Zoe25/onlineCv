@@ -1,0 +1,223 @@
+* {
+  padding: 0px; }
+
+#container {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  font-family: 'Dosis';
+  letter-spacing: 2px; }
+  #container #information {
+    text-align: center;
+    grid-column: 1/2;
+    color: #afb2be;
+    background-color: #0C0E12; }
+    #container #information .tab button {
+      background-color: transparent;
+      color: #fff;
+      border: 0px;
+      font-size: 18px;
+      font-weight: 400;
+      font-family: 'Open Sans Condensed';
+      text-decoration: none; }
+      #container #information .tab button:active {
+        color: #afb2be; }
+      #container #information .tab button:hover {
+        color: #FFA800; }
+      #container #information .tab button:focus {
+        outline: 0; }
+    #container #information h1 {
+      color: #fff; }
+    #container #information h4 {
+      font-size: 13px;
+      line-height: 17px;
+      font-weight: lighter; }
+  #container #container2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 250px;
+    background-color: #181A20;
+    color: #afb2be; }
+    #container #container2 #personalInfo {
+      padding: 10px 0px 0px 20px;
+      grid-column: 1/3;
+      grid-row: 1/2; }
+      #container #container2 #personalInfo p {
+        grid-column: 1/3; }
+      #container #container2 #personalInfo img {
+        grid-column: 1/3;
+        width: 28em;
+        height: 39em; }
+    #container #container2 .education {
+      grid-column: 3/5;
+      grid-row: 1/4; }
+      #container #container2 .education h1, #container #container2 .education h2, #container #container2 .education h3 {
+        color: #FFA800; }
+    #container #container2 #skills {
+      margin-top: 25px;
+      grid-column: 1/5; }
+      #container #container2 #skills #slideshow {
+        overflow: hidden;
+        height: 200px;
+        width: 1000px;
+        margin: 0 auto; }
+      #container #container2 #skills .slide-wrapper {
+        width: 2080px;
+        animation: slide 10s ease infinite; }
+      #container #container2 #skills .slide {
+        float: left;
+        height: 200px;
+        width: 1000px; }
+      #container #container2 #skills .slide:nth-child(1) {
+        background: url(../images/carousel4.jpg);
+        background-position: center;
+        background-repeat: repeat-x;
+        background-size: cover; }
+      #container #container2 #skills .slide:nth-child(2) {
+        background: url(../images/carousel3.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; }
+@keyframes slide {
+  20% {
+    margin-left: 0px; }
+  30% {
+    margin-left: -1000px; }
+  50% {
+    margin-left: -1000px; } }
+  #container #container3 {
+    grid-column: 2/5;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 250px;
+    background-color: #181A20;
+    color: #afb2be; }
+    #container #container3 .languages {
+      padding-left: 40px;
+      grid-column: 1/3;
+      color: #afb2be; }
+      #container #container3 .languages ul li {
+        text-decoration: none; }
+      #container #container3 .languages h3 {
+        color: #FFA800; }
+    #container #container3 .codeInfo {
+      padding-left: 40px;
+      margin-top: 20px;
+      grid-column: 1/5; }
+      #container #container3 .codeInfo h1 {
+        color: #FFA800; }
+    #container #container3 #skills {
+      margin-top: 25px;
+      grid-column: 1/5; }
+      #container #container3 #skills #slideshow {
+        overflow: hidden;
+        height: 200px;
+        width: 1000px;
+        margin: 0 auto; }
+      #container #container3 #skills .slide-wrapper {
+        width: 2080px;
+        animation: slide 10s ease infinite; }
+      #container #container3 #skills .slide {
+        float: left;
+        height: 200px;
+        width: 1000px; }
+      #container #container3 #skills .slide:nth-child(1) {
+        background: url(../images/carousel4.jpg);
+        background-position: center;
+        background-repeat: repeat-x;
+        background-size: cover; }
+      #container #container3 #skills .slide:nth-child(2) {
+        background: url(../images/carousel3.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; }
+@keyframes slide {
+  20% {
+    margin-left: 0px; }
+  30% {
+    margin-left: -1000px; }
+  50% {
+    margin-left: -1000px; } }
+  #container #container4 {
+    grid-column: 2/5;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 250px;
+    background-color: #181A20;
+    color: #afb2be; }
+    #container #container4 .ethos {
+      grid-column: 1/3; }
+      #container #container4 .ethos p {
+        padding-left: 30px;
+        color: #afb2be; }
+        #container #container4 .ethos p span {
+          color: #fff; }
+      #container #container4 .ethos h2 {
+        padding-left: 30px;
+        color: #FFA800; }
+    #container #container4 #inspiration {
+      grid-column: 1/5;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 50px;
+      background-color: #181A20;
+      color: #afb2be; }
+      #container #container4 #inspiration h2 {
+        grid-column: 1/5;
+        grid-row: 2/3;
+        color: #FFA800;
+        padding-left: 30px;
+        font-size: 30px; }
+      #container #container4 #inspiration .smoke, #container #container4 #inspiration .busy, #container #container4 #inspiration .wings, #container #container4 #inspiration .forest {
+        width: 250px;
+        height: 200px; }
+      #container #container4 #inspiration .starfish {
+        width: 500px;
+        height: 400px;
+        grid-column: 1/3;
+        grid-row: 3/5; }
+      #container #container4 #inspiration .smoke {
+        grid-column: 3/4;
+        grid-row: 3/4; }
+      #container #container4 #inspiration .busy {
+        grid-column: 4/5;
+        grid-row: 3/4; }
+      #container #container4 #inspiration .wings {
+        grid-column: 3/4;
+        grid-row: 4/5; }
+      #container #container4 #inspiration .forest {
+        grid-column: 4/5;
+        grid-row: 4/5; }
+    #container #container4 #skills {
+      margin-top: 25px;
+      grid-column: 1/5; }
+      #container #container4 #skills #slideshow {
+        overflow: hidden;
+        height: 200px;
+        width: 1000px;
+        margin: 0 auto; }
+      #container #container4 #skills .slide-wrapper {
+        width: 2080px;
+        animation: slide 18s ease infinite; }
+      #container #container4 #skills .slide {
+        float: left;
+        height: 200px;
+        width: 1000px; }
+      #container #container4 #skills .slide:nth-child(1) {
+        background: url(../images/carousel4.jpg);
+        background-position: center;
+        background-repeat: repeat-x;
+        background-size: cover; }
+      #container #container4 #skills .slide:nth-child(2) {
+        background: url(../images/carousel3.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; }
+@keyframes slide {
+  20% {
+    margin-left: 0px; }
+  30% {
+    margin-left: -1000px; }
+  50% {
+    margin-left: -1000px; } }
+
+/*# sourceMappingURL=style.css.map */

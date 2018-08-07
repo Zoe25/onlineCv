@@ -1,0 +1,50 @@
+@mixin carousel{
+    #skills{
+        margin-top:25px;
+        grid-column:1/5;
+        #slideshow {
+            
+            overflow: hidden;
+            height: 200px;
+            width: 1000px;
+            margin: 0 auto;
+          }
+        
+          .slide-wrapper {
+            width: 2080px;
+            animation: slide 10s ease infinite;
+          }
+        
+          .slide {
+            float: left;
+           height: 200px;
+           width: 1000px;
+          }
+        
+          .slide:nth-child(1) {
+            background:url(../images/carousel4.jpg);
+            background-position: center;
+            background-repeat: repeat-x;
+            background-size: cover;
+            // background-color: pink;
+          }
+        
+          .slide:nth-child(2) {
+            background:url(../images/carousel3.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+        
+          @keyframes slide {
+            // 0% {margin-left: 50px;}
+            20% {margin-left: 0px;}
+            30% {margin-left: -1000px;}
+            50% {margin-left: -1000px;}
+            // 60% {margin-left: -2000px;}
+            // 70% {margin-left: -2000px;}
+            // 80% {margin-left: -3000px;}
+            // 90% {margin-left: -3000px;}
+          }
+    }
+}
