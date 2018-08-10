@@ -112,6 +112,19 @@ $textColor: #afb2be;
                     color:$headingColor;
                 }
             }
+
+            .projects{
+                grid-column:1/5;
+                h1{
+                    grid-column: 1/5;
+                    padding-left:40px;
+                }
+
+                img{
+                    width:329px;
+                    height:300px;
+                }
+            }
         
         @include carousel;
     }
@@ -128,6 +141,7 @@ $textColor: #afb2be;
         .ethos{
             
             grid-column:1/3;
+            padding-bottom:130px;
             p{
                 padding-left:30px;
                 color:$textColor;
@@ -140,9 +154,7 @@ $textColor: #afb2be;
                 // padding-bottom:100px;
                 color:$headingColor;
                 // margin-bottom:100px;
-            }
-
-            
+            }      
         }
 
         #inspiration{
@@ -162,6 +174,37 @@ $textColor: #afb2be;
                 padding-left:30px;
                 font-size:30px;
             }
+            img{
+                // transition: transform .5s; /* Animation */
+                opacity: 1;
+                transition: .5s ease;
+                backface-visibility: hidden;
+            }
+
+            .text {
+                color: white;
+                font-size: 16px;
+              }
+
+              .zoom:hover {
+                opacity: 0.3;
+              }
+
+              .middle:hover .text {
+                opacity: 1;
+              }
+
+              .middle {
+                transition: .5s ease;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                text-align: center;
+              }
+              
 
             .smoke, .busy, .wings, .forest{
                 width: 250px;
@@ -189,6 +232,13 @@ $textColor: #afb2be;
             .forest{
                 grid-column:4/5;
                 grid-row:4/5; 
+            }
+
+            .zoom:hover {
+                // -ms-transform: scale(1.5); /* IE 9 */
+                //-webkit-transform: scale(2.5); /* Safari 3-8 */
+                //transform: scale(2.5); 
+                transform: scale(1.1);
             }
         }
         
@@ -235,4 +285,91 @@ $textColor: #afb2be;
               }
         }
     }
+
+    #container5{
+        grid-column: 2/5;
+
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows:50px;
+        background-color:$backgroundPagesColor;
+        color:$textColor;
+        h1{
+            padding-left:30px;
+        }
+
+        ul{
+            grid-column:1/5;
+            grid-row-start:2;
+            padding-left:40px;
+            img{
+                width:25px;
+                height: 25px;
+                padding-right:20px;
+                padding-top:10px;
+            }
+            li{
+                padding-bottom:20px;
+                a{
+                    text-decoration:none;
+                    color:$textColor;
+                }
+            }
+        }
+
+        .reference{
+            grid-column:1/5;
+
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows:50px;
+            background-color:$backgroundPagesColor;
+            color:$textColor;
+
+            h1{
+                padding-left:30px;
+                grid-row:1/2;
+            }
+
+            h3{
+                color:$headingColor;
+                padding-left:30px;
+            }
+
+            .upholstery{
+                grid-column:1/5;
+                grid-row:2/3;
+            }
+            .exec{
+                grid-column:1/5;
+                grid-row:3/4;
+            }
+
+            .tours{
+                grid-column:1/5;
+                grid-row:4/5;
+            }
+
+            .fact{
+                grid-column:1/5;
+                grid-row:5/6;
+            }
+
+            .lifeChoices{
+                grid-column:1/5;
+                grid-row:6/7;
+            }
+
+            .life{
+                grid-column:1/5;
+                grid-row:7/8;
+            }
+        }
+
+        @include carousel;
+    }
+}
+
+@media only screen and (min-width:360px){
+    
 }
