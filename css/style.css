@@ -38,7 +38,7 @@
     background-color: #181A20;
     color: #afb2be; }
     #container #container2 #personalInfo {
-      padding: 10px 0px 0px 20px;
+      padding: 10px 28px 0px 20px;
       grid-column: 1/3;
       grid-row: 1/2; }
       #container #container2 #personalInfo p {
@@ -184,18 +184,9 @@
         color: white;
         font-size: 16px; }
       #container #container4 #inspiration .zoom:hover {
-        opacity: 0.3; }
+        opacity: 2; }
       #container #container4 #inspiration .middle:hover .text {
-        opacity: 1; }
-      #container #container4 #inspiration .middle {
-        transition: .5s ease;
-        opacity: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        text-align: center; }
+        opacity: 0; }
       #container #container4 #inspiration .smoke, #container #container4 #inspiration .busy, #container #container4 #inspiration .wings, #container #container4 #inspiration .forest {
         width: 250px;
         height: 200px; }

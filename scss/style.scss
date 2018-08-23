@@ -56,7 +56,7 @@ $textColor: #afb2be;
         background-color:$backgroundPagesColor;
         color:$textColor;
         #personalInfo{
-            padding: 10px 0px 0px 20px;
+            padding: 10px 28px 0px 20px;
             grid-column:1/3; 
             grid-row:1/2;            
             p{
@@ -187,23 +187,23 @@ $textColor: #afb2be;
               }
 
               .zoom:hover {
-                opacity: 0.3;
+                opacity: 2;
               }
 
               .middle:hover .text {
-                opacity: 1;
+                opacity: 0;
               }
 
-              .middle {
-                transition: .5s ease;
-                opacity: 0;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                -ms-transform: translate(-50%, -50%);
-                text-align: center;
-              }
+            //   .middle {
+            //     transition: .5s ease;
+            //     opacity: 0;
+            //     position: absolute;
+            //     top: 50%;
+            //     left: 50%;
+            //     transform: translate(-50%, -50%);
+            //     -ms-transform: translate(-50%, -50%);
+            //     text-align: center;
+            //   }
               
 
             .smoke, .busy, .wings, .forest{
